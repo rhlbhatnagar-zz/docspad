@@ -11,7 +11,7 @@ use Thrift\ClassLoader\ThriftClassLoader;
 $GEN_DIR = realpath(dirname(__FILE__).'/..').'/gen-php';
 
 $loader = new ThriftClassLoader();
-$loader->registerNamespace('Thrift', __DIR__ . '/../../lib/php/lib');
+$loader->registerNamespace('Thrift', __DIR__ . '/../lib/php/lib');
 $loader->registerDefinition('docspad\client', $GEN_DIR);
 $loader->register();
 
